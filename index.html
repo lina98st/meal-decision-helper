@@ -9,28 +9,29 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     
     <style>
-        .bg-coral {
-            background-color: #FF6B6B;
+        .bg-orange {
+            background-color: #FF9F43;
         }
-        .btn-coral {
-            background-color: #FF8B94;
-            border-color: #FF8B94;
+        .btn-orange {
+            background-color: #FF9F43;
+            border-color: #FF9F43;
             color: white;
         }
-        .btn-coral:hover {
-            background-color: #FF6B6B;
-            border-color: #FF6B6B;
+        .btn-orange:hover {
+            background-color: #CC8034;
+            border-color: #CC8034;
+            color: white;
         }
-        .text-coral {
-            color: #FF6B6B;
+        .text-orange {
+            color: #FF9F43;
         }
-        .border-coral {
-            border-color: #FFB3BA !important;
+        .border-orange {
+            border-color: #FFEAA7 !important;
         }
     </style>
 </head>
 <body>
-    <header class="bg-coral text-white text-center py-4">
+    <header class="bg-orange text-white text-center py-4">
         <div class="container">
             <h1>Meal Decision Helper</h1>
             <p class="lead">Can't decide what to eat? Let us help!</p>
@@ -40,22 +41,22 @@
     <main class="container my-5">
         <section class="text-center mb-5">
             <h2>Get a Random Meal</h2>
-            <button type="button" class="btn btn-coral btn-lg mt-3" onclick="getRandomMeal()">Surprise Me!</button>
+            <button type="button" class="btn btn-orange btn-lg mt-3" onclick="getRandomMeal()">Surprise Me!</button>
         </section>
 
         <section id="mealDisplay" style="display: none;">
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <div class="card border-coral">
+                    <div class="card border-orange">
                         <img id="mealImage" src="" class="card-img-top" alt="Meal image" />
                         <div class="card-body">
-                            <h3 id="mealName" class="card-title text-coral"></h3>
+                            <h3 id="mealName" class="card-title text-orange"></h3>
                             <p id="mealCategory" class="text-muted"></p>
                             
-                            <h5 class="mt-4 text-coral">Ingredients</h5>
+                            <h5 class="mt-4 text-orange">Ingredients</h5>
                             <ul id="ingredientsList"></ul>
                             
-                            <h5 class="mt-4 text-coral">Instructions</h5>
+                            <h5 class="mt-4 text-orange">Instructions</h5>
                             <p id="mealInstructions"></p>
                         </div>
                     </div>
