@@ -24,3 +24,7 @@ A web application that helps users decide what to eat using TheMealDB API. Users
 - Solo project
 - JavaScript Portfolio Project for Nucamp Bootcamp
 - Repository: https://github.com/lina98st/meal-decision-helper.git
+
+## Screenshot App
+
+![Live App Screenshot](images/live-app-screenshot.png)
