@@ -3,14 +3,20 @@
 ## Project Description
 A web application that helps users decide what to eat using TheMealDB API. Users can get random meal suggestions with images and recipes.
 
+## Screenshot
+
+![Live App Screenshot](images/live-app-screenshot.png)
+
 ## Technologies
 - HTML5
 - CSS/Bootstrap 5
 - Vanilla JavaScript
 - TheMealDB API
 
-## Minimum Features (MVP)
-- Display random meal with image and details
+## Features
+- Display random meal with image and name
+- Multiple meals displayed in a grid layout (3 per row)
+- New meals appear at the top
 - Filter by category (Vegetarian, Seafood, Dessert, etc.)
 - Show ingredients and cooking instructions
 - Responsive design with Bootstrap
@@ -24,7 +30,3 @@ A web application that helps users decide what to eat using TheMealDB API. Users
 - Solo project
 - JavaScript Portfolio Project for Nucamp Bootcamp
 - Repository: https://github.com/lina98st/meal-decision-helper.git
-
-## Screenshot App
-
-![Live App Screenshot](images/live-app-screenshot.png)
