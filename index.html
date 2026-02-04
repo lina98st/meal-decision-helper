@@ -72,6 +72,14 @@
 
   console.log(randomMeal)
 
+  let ingredientsList = ''
+
+for (let i = 1; i <= 20; i++) {
+    if (randomMeal.meals[0]['strIngredient' + i]) {
+ingredientsList += '<li>' + randomMeal.meals[0]['strMeasure' + i] + ' ' + randomMeal.meals[0]['strIngredient' + i] + '</li>'
+    }
+}
+
 const cardHTML = `
     <div class="col-md-4">
         <div class="card border-orange">
@@ -80,16 +88,14 @@ const cardHTML = `
   class="meal-picture"
   src="${randomMeal.meals[0].strMealThumb}"
   alt="Random Meal send by the Meal DB" />
+  <ul>${ingredientsList}</ul>
         </div>
     </div>
 `;
 
 document.getElementById('mealContainer').insertAdjacentHTML('afterbegin', cardHTML);
         }
-
-        for (let i = 1; i <= 20; i++) {
-console.log(randomMeal.meals[0]['strIngredient' + i])
-        }
+        
     </script>
 </body>
 </html>
