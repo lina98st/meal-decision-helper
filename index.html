@@ -10,23 +10,23 @@
     
     <style>
         .bg-orange {
-            background-color: #FF9F43;
+            background-color: #D2691E;
         }
         .btn-orange {
-            background-color: #FF9F43;
-            border-color: #FF9F43;
+            background-color: #D2691E;
+            border-color: #D2691E;
             color: white;
         }
         .btn-orange:hover {
-            background-color: #CC8034;
-            border-color: #CC8034;
+            background-color: #A0522D;
+            border-color: #A0522D;
             color: white;
         }
         .text-orange {
-            color: #FF9F43;
+            color: #D2691E;
         }
         .border-orange {
-            border-color: #FFEAA7 !important;
+            border-color: #F5DEB3 !important;
         }
 
         .meal-picture {
@@ -85,6 +85,10 @@ const cardHTML = `
 `;
 
 document.getElementById('mealContainer').insertAdjacentHTML('afterbegin', cardHTML);
+        }
+
+        for (let i = 1; i <= 20; i++) {
+console.log(randomMeal.meals[0]['strIngredient' + i])
         }
     </script>
 </body>
