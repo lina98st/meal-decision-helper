@@ -1,7 +1,7 @@
 # Meal Decision Helper
 
 ## Project Description
-A web application that helps users decide what to eat using TheMealDB API. Users can get random meal suggestions with images and recipes.
+A web application that helps users decide what to eat using TheMealDB API. Users can get random meal suggestions with images and ingredients.
 
 ## Screenshot
 
@@ -15,10 +15,9 @@ A web application that helps users decide what to eat using TheMealDB API. Users
 
 ## Features
 - Display random meal with image and name
+- Show ingredients with measurements
 - Multiple meals displayed in a grid layout (3 per row)
 - New meals appear at the top
-- Filter by category (Vegetarian, Seafood, Dessert, etc.)
-- Show ingredients and cooking instructions
 - Responsive design with Bootstrap
 
 ## API
