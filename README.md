@@ -3,6 +3,9 @@
 ## Project Description
 A web application that helps users decide what to eat using TheMealDB API. Users can get random meal suggestions with images and ingredients.
 
+## Live Demo
+https://meal-decision-helper.netlify.app/
+
 ## Screenshot
 
 ![Live App Screenshot](images/live-app-screenshot.png)
@@ -28,4 +31,3 @@ A web application that helps users decide what to eat using TheMealDB API. Users
 ## Project Info
 - Solo project
 - JavaScript Portfolio Project for Nucamp Bootcamp
-- Repository: https://github.com/lina98st/meal-decision-helper.git
