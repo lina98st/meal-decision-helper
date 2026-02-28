@@ -1,33 +1,35 @@
 # Meal Decision Helper
 
 ## Project Description
-A web application that helps users decide what to eat using TheMealDB API. Users can get random meal suggestions with images and ingredients.
+Meal Decision Helper is a web application that suggests random meals using the TheMealDB API. Users can explore meal ideas with images, ingredient lists, and recipe instructions in a clean and responsive interface.
 
 ## Live Demo
 https://meal-decision-helper.netlify.app/
 
 ## Screenshot
-
 ![Live App Screenshot](images/live-app-screenshot.png)
 
 ## Technologies
-- HTML5
-- CSS/Bootstrap 5
-- Vanilla JavaScript
-- TheMealDB API
+HTML5  
+CSS (Bootstrap 5)  
+Vanilla JavaScript  
+TheMealDB API
 
 ## Features
-- Display random meal with image and name
-- Show ingredients with measurements
-- Multiple meals displayed in a grid layout (3 per row)
-- New meals appear at the top
-- Responsive design with Bootstrap
+Random meal suggestions with images  
+Ingredient lists with measurements  
+Recipe instructions (toggle view)  
+Responsive grid layout  
+Clean Bootstrap styling  
+No API key required
 
 ## API
-- TheMealDB (https://www.themealdb.com/)
-- Free API, no key required
-- Provides meal data including images, ingredients, and instructions
+TheMealDB (https://www.themealdb.com/)  
+Free API providing meal data  
+Includes images, ingredients, and instructions
 
 ## Project Info
-- Solo project
-- JavaScript Portfolio Project for Nucamp Bootcamp
+Solo portfolio project  
+JavaScript project from Nucamp Bootcamp  
+Hosted on Netlify  
+Source code available on GitHub
