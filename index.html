@@ -63,7 +63,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
     <script>
-
+// fetches a single random meal and adds it to the top of the container 
  async function getRandomMeal() {
             console.log('Button clicked!');
                      const randomMeal = await fetch(
@@ -72,6 +72,7 @@
 
   console.log(randomMeal)
 
+    // build ingredients list from up to 20 possible ingredient fields
   let ingredientsList = ''
 
 for (let i = 1; i <= 20; i++) {
@@ -95,7 +96,50 @@ const cardHTML = `
 
 document.getElementById('mealContainer').insertAdjacentHTML('afterbegin', cardHTML);
         }
+
+// builds and returns the HTML string for a single meal card
+        function createCardHTML(meal) {  
+  let ingredientsList = ''
+
+for (let i = 1; i <= 20; i++) {
+if (meal['strIngredient' + i]) {
+ingredientsList += '<li>' + meal['strMeasure' + i] + ' ' + meal['strIngredient' + i] + '</li>'
+    }
+}
+
+        return `
+    <div class="col-md-4">
+        <div class="card border-orange">
+            <h3>${meal.strMeal}</h3>
+<img
+  class="meal-picture"
+  src="${meal.strMealThumb}"
+  alt="Random Meal send by the Meal DB" />
+  <ul>${ingredientsList}</ul>
+        </div>
+    </div>
+`;
+        }
+
+
+//fetches 6 random meals on the website
+        async function getSixMeals() {
+
+const promises = Array.from({ length: 6 }, () =>
+    fetch("https://www.themealdb.com/api/json/v1/1/random.php").then(response => response.json())
+);
+           const results = await Promise.all(promises);
+
+
+           document.getElementById('mealContainer').innerHTML = '';
+
+               results.forEach(results => {
+        const meal = results.meals[0];
+        document.getElementById('mealContainer').insertAdjacentHTML('beforeend', createCardHTML(meal));
+    });
         
+    }
+    
     </script>
 </body>
 </html>
