@@ -64,9 +64,7 @@
     
     <script>
 
-
-// builds and returns the HTML string for a single meal card
-function createCardHTML(meal) {  
+function createCardHTML(meal) {
   let ingredientsList = '';
 
   for (let i = 1; i <= 20; i++) {
@@ -85,13 +83,34 @@ function createCardHTML(meal) {
             src="${meal.strMealThumb}"
             alt="Meal image"
           />
-          <ul>${ingredientsList}</ul>
+
+          <div class="d-flex gap-2 mb-2">
+            <button class="btn btn-orange" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#ingredients-${meal.idMeal}">
+              Show ingredients
+            </button>
+
+            <button class="btn btn-orange" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#instructions-${meal.idMeal}">
+              Show instructions
+            </button>
+          </div>
+
+          <div class="collapse" id="ingredients-${meal.idMeal}">
+            <ul>${ingredientsList}</ul>
+          </div>
+
+          <div class="collapse" id="instructions-${meal.idMeal}">
+            <p>${meal.strInstructions}</p>
+          </div>
+
         </div>
       </div>
     </div>
   `;
 }
-
 
 //fetches 6 random meals on the website
         async function getSixMeals() {
